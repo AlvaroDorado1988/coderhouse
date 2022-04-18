@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS MENU */
+/* CSS MENU */
+
+#menu {
+  margin-bottom: 100px;
+  height: 20px;
+}
+
+ul {
+  background-color: black;
+  list-style: none;
+  text-align: right;
+  width: 100%;
+}
+
+
+li {
+  display: inline-block;
+  margin: 15px;
+  position: relative;
+  width: 10%;
+}
+
+a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+}
+
+
+/* CSS DE LOS PRODUCTOS */
+/* CSS DE LOS PRODUCTOS */
+
+
+.pagina__titulo--uppercase {
+  text-transform: uppercase;
+}
+
+#ultimas__entradas {
+  display: flex;
+  align-items: stretch;
+
+
+}
+
+#books {
+  display: flex;
+  align-items: stretch;
+
+}
+
+#comics {
+  display: flex;
+  align-items: stretch;
+}
+
+#mangas {
+  display: flex;
+  align-items: stretch;
+
+}
+
+#discos {
+  display: flex;
+  align-items: stretch;
+
+}
+
+.card__SectionName--uppercase {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 1%;
+  margin-right: 0.5%;
+  text-align: justify;
+  width: 250px;
+  display: inline-block;
+  border-color: rgb(155, 149, 149);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 18px;
+  height: auto;
+}
+
+.card__image {
+  max-width: 250px;
+  max-width: 250px;
+  margin: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.card__title {
+  font-size: 27px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card__price {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.card__description {
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card__button {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  width: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.under__construction {
+  max-width: 40%;
+  margin-left: 0%;
+}
+
+
+/* CSS DEL FOOTER */
+/* CSS DEL FOOTER */
+
+footer {
+  background-color: rgb(0, 0, 0);
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
+.rrss {
+  margin: 0%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.rrss__img {
+  max-width: 50px;
+  max-height: 70px;
+  margin: 2%;
+  margin-top: 70px;
+}
+
+
+
+
+
+/* CSS DEL FORMULARIO */
+/* CSS DEL FORMULARIO */
+
+.formulario {
+  padding-block: 30px;
+  padding-inline: 10px;
+  padding-left: 40px;
+  margin-inline: 35%;
+  border: 2px;
+  border-color: rgb(78, 75, 75);
+  border-style: solid;
+  width: 350px;
+  height: 430px;
+}
+
+.formulario__informacionBasica1 label {
+  display: inline-block;
+  width: 100px;
+}
+
+.formulario__informacionBasica input {
+  display: inline;
+  margin-left: 40px;
+  background-color: rgb(231, 227, 227);
+}
+
+.formulario__informacionBasica2 select {
+  margin-top: 0px;
+  margin-left: 100px;
+  background-color: rgb(231, 227, 227);
+}
+
+.formulario__intereses {
+  width: 90%;
+  border: none;
+}
+
+.formulario__comentarios textarea {
+  width: 90%;
+  height: 150px;
+  background-color: rgb(231, 227, 227);
+}
+
+.formulario__reset {
+  padding: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px;
+  border-color: black;
+  border-radius: 10px;
+  float: left;
+}
+
+.formulario__submit {
+  padding: 5px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px;
+  border-color: black;
+  border-radius: 10px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+
+
+/* GRID DESKTOP */
+/* GRID DESKTOP */
+
+
+@media only screen and (min-width:800px) {
+
+  #grid__container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% auto 20%;
+  }
+
+
+
+  #menu {
+    grid-area: header;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    align-content: flex-start
+  }
+
+  h1 {
+    margin-top: 6rem;
+  }
+
+  .card__SectionName--uppercase {
+    padding: 20px;
+  }
+
+  #ultimas__entradas {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  #books {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  #comics {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+
+  #mangas {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  #discos {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  footer {
+    grid-area: footer;
+    display: grid;
+    position: absolute;
+    width: auto;
+    align-content: flex-start;
+
+  }
+
+  .under__construction {
+    max-width: 40%;
+    margin-left: 30%;
+    display: inline-block
+  }
+}
+
+
+
+/* GRID MOBILE */
+/* GRID MOBILE */
+
+
+@media only screen and (max-width:800px) {
+
+  #grid__container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto 20%;
+  }
+
+
+  #menu {
+    grid-area: header;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    align-content: flex-start
+  }
+
+
+
+
+  #ultimas__entradas {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  #books {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  #comics {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+
+  #mangas {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  #discos {
+    grid-area: content;
+    display: inline-flex;
+  }
+
+  footer {
+    grid-area: footer;
+    display: inline-grid;
+    position: relative;
+    width: 100%;
+  }
+
+  .rrss {
+    margin: 0%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .rrss__img {
+    max-width: 50px;
+    max-height: 70px;
+    margin: 2%;
+    margin-top: 70px;
+  }
+
+  div .form {
+    grid-area: content;
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-content: stretch;
+  }
+
+  .under__construction {
+    grid-area: content;
+    margin-left: 30%;
+    max-width: 50%;
+ 
+  }
+}
+
